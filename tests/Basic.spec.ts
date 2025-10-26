@@ -11,6 +11,9 @@ test("Selenium Web Page", async ({page}) => {
     // console.log(header2)
 
     const row = page.locator('ul').locator('li').nth(5)
+
+
+    
     console.log(await row.textContent())
     await row.click()
 
